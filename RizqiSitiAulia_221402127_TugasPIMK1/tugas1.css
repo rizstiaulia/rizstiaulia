@@ -1,0 +1,141 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style Header */
+header {
+  background-color: hsl(112, 31%, 65%);
+  color: #aa1b1b;
+  text-align: center;
+  justify-content: center; /* Memposisikan teks secara horizontal ke tengah */
+  align-items: center; /* Memposisikan teks secara vertikal ke tengah */
+  padding: 20px;
+  background-image: url("Resto Nusantara.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Sesuaikan tinggi header sesuai kebutuhan */
+  position: relative;
+}
+
+/* Atur ukuran gambar latar belakang saat tampilan di layar kecil */
+@media screen and (max-width: 768px) {
+  header {
+    height: 300px; /* Ubah tinggi header untuk tampilan layar kecil */
+  }
+}
+
+/* CSS tambahan untuk header */
+.header-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header-content h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.header-content p {
+  color: #555;
+}
+
+.header-image {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style Navigation */
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  background-color: rgb(235, 196, 99);
+  padding: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #e56262;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #7e3232;
+}
+
+section h2 {
+  color: #ffd454;
+}
+
+section p {
+  color: #ffffff;
+}
+/* CSS untuk menu card */
+
+.card-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e56262;
+  height: 100%; /* Atur tinggi elemen */
+  text-align: center; /* Menengahkan teks secara horizontal */
+  color: #ffd454;
+}
+
+.card-text h1 {
+  margin: 0; /* Menghapus margin bawaan dari h1 */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card {
+  flex-basis: calc(33.333% - 20px);
+  background-color: rgb(235, 196, 99); /* Warna hijau muda sesuai tema */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 4px;
+  width: calc(33.333% - 20px); /* Tiga kartu per baris dengan margin */
+  text-align: center;
+}
+
+.card-image {
+  width: 100%; /* Makes the image fill the container */
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+/* Style Footer */
+footer {
+  background-color: rgb(235, 196, 99);
+  color: #e56262;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
