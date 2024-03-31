@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebuilt Kampus Merdeka</title>
+    <link rel="stylesheet" href="./style/output.css">
+    <link rel="icon" href="image/favicon.ico"/>
+</head>
+<body>
+  <header class="bg-black text-white py-4 px-4 mx-auto h-15 ">
+    <div class="container mx-auto px-4 flex justify-between items-center max-w-screen-xl">  
+        <div class="flex items-center space-x-4">
+        <img src="image/logo_tutwuri.png" alt="Logo Kampus Merdeka" class="w-10 h-10">       
+        <img src="image/logo-kampus-merdeka.png" alt="Logo Kampus Merdeka" class="w-110 h-10">
+      </div>
+      <div class="hidden md:flex items-center"  id="nav-menuDrop">  
+        <a href="#" class="mr-4 text-xl font-bold">Beranda</a>
+        <a href="#" class="mr-4 text-xl font-bold">Program</a>
+        <a href="#" class="mr-4 text-xl font-bold">Butuh Bantuan?</a>
+        <div class="relative space-x-2">
+          <button class=" bg-white rounded-full py-2 px-3 flex items-center cursor-pointer font-bold text-black"><img src="image/profile.png" alt="user" class="w-8 mr-2">
+            Masuk ke Akun</button>
+          </div>      
+      </div>
+      <div class="flex md:hidden">
+        <button type="button" class="focus:outline-none" onclick="hamburger_menu()">
+            <img src="image/hamburger_menu.png" alt="Menu" class="h-6 w-6">
+        </button>
+    </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto py-12 px-4 max-w-screen-xl">  
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Program Kampus Merdeka</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4"> 
+        <div class="bg-white p-4 rounded-md shadow-md flex flex-col">
+            <img src="image/kampus_mengajar.png" alt="kampus_mengajar" class="w-full h-auto">
+              <h3 class="text-xl font-bold mb-2">Kampus Mengajar</h3>
+              <p>Bantu peningkatan kualitas pendidikan dasar dengan terlibat langsung  pada proses pengajaran di sekolah-sekolah yang berlokasi di seluruh daerah di Indonesia.</p>
+              <hr class="my-3 border-b border-gray-350 border-[1px]">
+            <h3 class="text-lg font-bold mb-2 text-blue-500 hover:text-blue-800 transition-all duration-300">Tentang Program</h3>
+            <hr class="my-2 border-b border-gray-350 border-[1px]">
+            <h3 class="text-lg font-bold mb-2 text-blue-500 hover:text-blue-800 transition-all duration-300">Syarat dan Ketentuan</h3>
+        </div>
+
+        <div class="bg-white p-4 rounded-md shadow-md flex flex-col">
+        <img src="image/MSIB.png" alt="Magang_MSIB" class="w-full h-auto">
+        <h3 class="text-xl font-bold mb-2">Magang MSIB</h3>
+          <p>Dapatkan pengalaman dunia kerja secara langsung sebagai persiapan kariermu.</p>
+          <hr class="my-3 border-b border-gray-350 border-[1px]">
+            <h3 class="text-lg font-bold mb-2 text-blue-500 hover:text-blue-800 transition-all duration-300">Tentang Program</h3>
+            <hr class="my-2 border-b border-gray-350 border-[1px]">
+            <h3 class="text-lg font-bold mb-2 text-blue-500 hover:text-blue-800 transition-all duration-300">Syarat dan Ketentuan</h3>
+        </div>
+          
+        
+
+        <div class="bg-white p-4 rounded-md shadow-md flex flex-col">
+            <img src="image/MSIB.png" alt="Stupen" class="w-full h-auto"> 
+            <h3 class="text-xl font-bold mb-2">Studi Independen</h3>
+              <p>Jalankan proyek penelitian dengan studi kasus nyata dari para pelaku industri ternama.</p>
+              <hr class="my-3 border-b border-gray-350 border-[1px]">
+              <h3 class="text-lg font-bold mb-2 text-blue-500 hover:text-blue-800 transition-all duration-300">Tentang Program</h3>
+              <hr class="my-2 border-b border-gray-350 border-[1px]">
+              <h3 class="text-lg font-bold mb-2 text-blue-500 hover:text-blue-800 transition-all duration-300">Syarat dan Ketentuan</h3>
+            </div>
+       
+        <div class="bg-white p-4 rounded-md shadow-md flex flex-col">
+        <img src="image/pmm.png" alt="PMM" class="w-full h-auto">
+            <h3 class="text-xl font-bold mb-2">Pertukaran Mahasiswa Merdeka</h3>
+          <p>Program pertukaran mahasiswa dalam negeri  yang memberikan pengalaman langsung untuk lebih memaknai keberagaman budaya nusantara.</p>
+          <hr class="my-3 border-b border-gray-350 border-[1px]">
+          <h3 class="text-lg font-bold mb-2 text-blue-500 hover:text-blue-800 transition-all duration-300">Tentang Program</h3>
+          <hr class="my-2 border-b border-gray-350 border-[1px]">
+          <h3 class="text-lg font-bold mb-2 text-blue-500 hover:text-blue-800 transition-all duration-300">Syarat dan Ketentuan</h3>
+        </div>
+
+        <div class="bg-white p-4 rounded-md shadow-md flex flex-col">
+            <img src="image/wirausaha_merdeka.png" alt="Wirausaha_Merdeka" class="w-full h-auto">
+            <h3 class="text-xl font-bold mb-2">Wirausaha Merdeka</h3>
+            <p>Ikuti program unggulan dari berbagai Perguruan Tinggi yang bertujuan untuk meningkatkan kemampuan wirausaha.</p>
+            <hr class="my-3 border-b border-gray-350 border-[1px]">
+            <h3 class="text-lg font-bold mb-2 text-blue-500 hover:text-blue-800 transition-all duration-300">Tentang Program</h3>
+            <hr class="my-2 border-b border-gray-350 border-[1px]">
+            <h3 class="text-lg font-bold mb-2 text-blue-500 hover:text-blue-800 transition-all duration-300">Syarat dan Ketentuan</h3>
+          </div>
+
+          <div class="bg-white p-4 rounded-md shadow-md flex flex-col">
+            <img src="image/iisma.png" alt="IISMA" class="w-full h-auto">
+            <h3 class="text-xl font-bold mb-2">Indonesian International Student Mobility Awards (IISMA)</h3>
+            <p>Program pertukaran dengan universitas lain dari seluruh dunia untuk bertukar budaya.</p>
+            <hr class="my-3 border-b border-gray-350 border-[1px]">
+            <h3 class="text-lg font-bold mb-2 text-blue-500 hover:text-blue-800 transition-all duration-300">Tentang Program</h3>
+            <hr class="my-2 border-b border-gray-350 border-[1px]">
+            <h3 class="text-lg font-bold mb-2 text-blue-500 hover:text-blue-800 transition-all duration-300">Syarat dan Ketentuan</h3>
+          </div>
+    
+          <div class="bg-white p-4 rounded-md shadow-md flex flex-col">
+            <img src="image/praktisi_mengajar.png" alt="praktisi_mengajar" class="w-full h-auto">
+            <h3 class="text-xl font-bold mb-2">Praktisi Mengajar</h3>
+            <p>Ruang kolaborasi antara Praktisi sebagai representasi industri dengan dosen Perguruan Tinggi dalam bentuk pengajaran mata kuliah agar mahasiswa lebih siap untuk masuk ke dunia kerja.</p>
+            <hr class="my-3 border-b border-gray-350 border-[1px]">
+            <h3 class="text-lg font-bold mb-2 text-blue-500 hover:text-blue-800 transition-all duration-300">Tentang Program</h3>
+            <hr class="my-2 border-b border-gray-350 border-[1px]">
+            <h3 class="text-lg font-bold mb-2 text-blue-500 hover:text-blue-800 transition-all duration-300">Syarat dan Ketentuan</h3>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Kegiatan Lainnya</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">  
+        <div class="bg-white p-4 rounded-md shadow-md flex flex-col">
+          <img src="image/Mandiri.png" alt="Mandiri" class="w-full h-auto">
+          <h3 class="text-xl font-bold mb-2">Magang Mandiri</h3>
+          <p>
+            Ruang kolaborasi antara Praktisi sebagai representasi industri dengan dosen Perguruan Tinggi dalam bentuk pengajaran mata kuliah agar mahasiswa lebih siap untuk masuk ke dunia kerja.
+          </p>
+          <hr class="my-3 border-b border-gray-350 border-[1px]">
+          <h3 class="text-lg font-bold mb-2 text-blue-500 hover:text-blue-800 transition-all duration-300">Tentang Kegiatan</h3>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="w-screen bg-black lg:flex hidden items-center pt-5 pb-1 space-x-2 text-white" style="height: 65vh;">
+    <div class="flex items-center m-auto w-full h-5/6">
+        <div class="footer container h-full m-auto bg-black grid grid-rows-2">
+            <div class="grid grid-cols-4 gap-4">
+                    <div class="pl-20"><img src="https://kampusmerdeka.kemdikbud.go.id/static/media/logo-kemendikbud@2x.8229b760.webp" width="130px" height="130px"></div>
+                    <div>
+                        <h1 class="font-bold mb-6">Direktorat Jenderal Pendidikan Tinggi, Riset, dan Teknologi (Diktiristek)</h1>
+                        <p>marketing@kampusmerdeka.co</p>
+                        <p>Jl. Jenderal Sudirman, Senayan, Jakarta 10270</p>
+                    </div>
+                    <div>
+                        <h1 class="font-bold mb-6">Navigasi</h1>
+                        <ul class="flex flex-col space-y-3">
+                            <li><a href="#">Beranda</a></li>
+                            <li><a href="#">Tentang Kami</a></li>
+                            <li><a href="#">Berita</a></li>
+                            <li><a href="#">Pengumuman</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Program</a></li>
+                            <li><a href="#">Daftar</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="font-bold mb-6">Tautan Eksternal</h1>
+                        <p>Mitra Kampus Merdeka</p>
+                    </div>
+                </div>
+            <div class="grid grid-cols-4 gap-4 mt-20">
+                <div class="w-5"></div>
+                <div class="text-2xl flex items-center space-x-1">
+                    <contact> 
+                        <img src="image/ig.png" alt="insta">
+                    </contact>
+                </div>
+                <div class="col-span-2 py-8">
+                    <p>Hak Cipta 2022 Kementerian Pendidikan dan Kebudayaan </p>
+                    <p>RI Foto oleh ITS, ITERA, and UI</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+<script>
+    const hamburger_menu = () => {
+        const nav = document.getElementById("nav-menuDrop");
+        if (nav.classList.contains("hidden")) {
+            nav.classList.remove("hidden");
+            document.body.style.overflow = 'hidden';
+        } else {
+            nav.classList.add("hidden");
+            document.body.style.overflow = 'auto';
+        }
+    }
+</script>
+</body>
+</html>
